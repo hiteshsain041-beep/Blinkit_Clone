@@ -37,7 +37,8 @@ export default function App() {
 
 
   return (
-    <div>
+    
+    <div className='container mx-auto px-4'>
       {/* header */}
       <Header />
       {/* Offer    */}
