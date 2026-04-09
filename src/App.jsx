@@ -37,10 +37,11 @@ export default function App() {
 
 
   return (
-    
+    <>
+     {/* header */}
+    <Header />
     <div className='container mx-auto px-4'>
-      {/* header */}
-      <Header />
+     
       {/* Offer    */}
       <OfferImg />
       {/* Cards */}
@@ -55,6 +56,8 @@ export default function App() {
       {/* footer */}
       <Footer />
     </div>
+</>
 
+   
   )
 }

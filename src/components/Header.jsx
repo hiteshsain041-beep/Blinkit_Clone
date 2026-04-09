@@ -28,13 +28,22 @@ export default function Header() {
                     <input type="text" className='w-full outline-none px-5' placeholder='Search' />
                 </div>
                 {/* button */}
-                <div>
-                    <button className='mx-8 mr-20 text-[18px] mb-1'>Account</button>
-                    <button className='p-2 bg-green-600 rounded-sm text-white px-8 py-3 '  >
-                        <LuShoppingCart className='text-white ' />
+                <div className="flex items-center gap-8">
+        <button className="text-gray-700 font-medium hover:text-green-600 transition-colors">
+          Account
+        </button>
 
-                        </button>
-                </div>
+        <button className="flex items-center gap-3 bg-green-700 text-white px-4 py-3 rounded-lg font-bold hover:bg-green-800 transition-all shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+          <div className="flex flex-col items-start leading-none text-sm">
+            <span>0 items</span>
+            <span className="text-[10px] opacity-90 uppercase">View Cart</span>
+          </div>
+        </button>
+      </div>
+      
 
             </div>
 
